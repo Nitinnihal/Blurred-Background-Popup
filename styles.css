@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(https://c1.wallpaperflare.com/preview/811/367/789/technology-computer-creative-design.jpg);
+    background-size: cover;
+    text-align: center;
+    transition: filter 0.7s;
+}
+h1{
+    font-size: 60px;
+    color:rgb(180, 245, 147);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 4px rgba(7, 7, 7, 0.7);
+   
+}
+.effect:hover{
+    color: rgb(228, 222, 222);
+    text-shadow: 4px 4px 4px rgba(13, 1, 62, 0.9);
+}
+
+.btn{
+    padding: 10px 20px;
+    width: 200px;
+    background-color: rgb(240, 172, 25);
+    cursor:grabbing;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    box-shadow:4px 4px 4px rgba(0, 0, 0, 0.8) 
+}
+.btn:hover{
+    filter: brightness(0.8);  
+}
+
+.active.container{
+    filter: blur(2px) brightness(0.9);
+}
+.popup-container{
+    position:fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 300px;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url(https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+    background-size:cover;
+    border-radius: 15px;
+    box-shadow: 0 4px  8px  rgba(26, 2, 105, 0.5);
+    opacity: 1;
+    transition: all 0.7s;
+}
+h4{
+    font-size: 35px;
+}
+label{
+    color: rgb(148, 207, 20);
+    font-family: sans-serif;
+}
+.popup-btn{
+    background-color: orangered;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid;
+}
+.input{
+    border: 2px solid;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.input::placeholder{
+    color:lightgrey;
+}
+
+.close-icon{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+.close-icon:hover{
+    color: red;
+}
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
